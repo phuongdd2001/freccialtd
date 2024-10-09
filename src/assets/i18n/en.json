@@ -1,0 +1,47 @@
+{
+    "common": {
+        
+    },
+    "home": {
+        "introduce_des": "Mobile application software development company"
+    },
+    "intrecruit": {
+        "description_work" : "Job Description",
+        "requirement_work" : "Requirement",
+        "benefit" : "Benefit",
+        "amount" : "Amount:",
+        "minimum_years_of_experience" : "Experience:",
+        "salary": "Salary:",
+        "working_time" : "Working Time:",
+        "created_at" : " Job posting date:",
+        "limitation" : "Limitation:",
+        "submit": "Submit"
+    },
+    "form": {
+        "information_fialog": "Application information:",
+        "name_label": "Name",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "introduction_label": "Introduction:",
+        "attached_files": "Attached files",
+        "max": "Max",
+        "formats": "Formats:",
+        "error_upload": "Please do not download more than 5 files and capacity less than 100MB",
+        "error_upload_files": "Please do not download more than 5 files", 
+        "error_upload_total": "Please do not download more than 100MB", 
+        "success_career": "Application submitted successfully!",
+        "success_des": "Congratulations, you have successfully submitted your application. The recruitment committee will begin reviewing your application. If the application is valid and fully meets the requirements of the position applied for, we will contact you within 5-7 working days by email & phone. Hope to see you soon at PionTech!",
+        "close_dialog": "Close notification",
+        "name_error": "Name is required!",
+        "max_name_error": "Name must be at least 3 characters!",
+        "email_error": "Email is required!",
+        "check_email_error": "Email format is not correct!",
+        "phone_error": "Phone is required!",
+        "check_phone_error": "Phone number format is incorrect!"
+    },
+    "error": {
+        "Please_enter_the_correct_email_format": "Vui lòng nhập đúng định dạng email",
+        "Please_enter_the_correct_phone_number_format": "Vui lòng nhập đúng định dạng số điện thoại",
+        "The_name_must_contain_at_least_3_characters": "Tên phải chứa ít nhất 3 kí tự"
+    }
+}

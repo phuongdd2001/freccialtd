@@ -1,1 +1,90 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<header>
+  <div class="px-6 py-5 flex justify-between items-center">
+    <a [routerLink]="['']" [rel]="'dofollow'">
+      <img
+        src="assets/images/logo.png"
+        alt="Freccialtd logo"
+        title="Freccialtd logo"
+        width=""
+        height=""
+        class="max-lg:h-[38px]"
+      />
+    </a>
+    <div class="flex items-center gap-x-2">
+      <img
+        src="assets/images/phone.svg"
+        alt=""
+        title=""
+        width="28px"
+        height="28px"
+        class="p-1"
+      />
+      <p class="text-[14px] leading-[22px] font-semibold">Liên hệ 0792582126</p>
+    </div>
+  </div>
+</header>
+<main>
+  <div>
+    <img
+      src="assets/images/banner.png"
+      alt="Freccialtd banner"
+      title="Freccialtd banner"
+      width=""
+      height=""
+      class="max-lg:h-[38px]"
+    />
+  </div>
+  <div class="container-main my-[142px]">
+    <app-title-component title="ĐỐI TÁC CỦA CHÚNG TÔI"></app-title-component>
+    <div class="mt-10">
+      <div
+        class="box-our-partners flex gap-x-10 items-center justify-center py-12 rounded-2xl"
+      >
+        @for (item of partners; track $index) {
+        <img [src]="item" alt="" />
+        }
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="px-[144px] mx-auto">
+    <div class="flex justify-between">
+      <div>
+        <a [routerLink]="['']" [rel]="'dofollow'">
+          <img
+            src="assets/images/logo.png"
+            alt="Freccialtd logo"
+            title="Freccialtd logo"
+            width=""
+            height=""
+            class="max-lg:h-[38px]"
+          />
+        </a>
+        <p class="mt-3">Like it do it - for a better life</p>
+        <div class="mt-10 flex">
+          @for (item of socials; track $index) {
+          <a [href]="item.link" class="p-2">
+            <img [src]="item.icon" alt="" title="" width="20px" height="20px" />
+          </a>
+          }
+        </div>
+      </div>
+      <div class="w-[400px] text-right">
+        <h3 class="uppercase font-bold">
+          CÔNG TY TNHH FRECCIA MOBILE VIỆT NAM
+        </h3>
+        <ul class="mt-4 flex flex-col gap-y-4">
+          <li>
+            <strong>Địa chỉ:</strong> Số 25- N02 Khu tái định cư Triều Khúc, Xã
+            Tân Triều, Huyện Thanh Trì, Thành phố Hà Nội, Việt Nam
+          </li>
+          <li><strong>Mã số thuế:</strong> 0110853850</li>
+          <li><strong>Người đại diện:</strong> Phạm Minh Trí</li>
+          <li><strong>Số điện thoại:</strong> 0792582126</li>
+        </ul>
+      </div>
+    </div>
+    <div>© 2024. Copyright belongs to Freccia</div>
+  </div>
+</footer>

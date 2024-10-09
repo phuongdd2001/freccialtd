@@ -1,0 +1,47 @@
+{
+    "common": {
+        
+    },
+    "home": {
+        "introduce_des": "Công ty phát triển phần mềm ứng dụng di động"
+    },
+    "intrecruit": {
+        "description_work" : "Mô tả công việc",
+        "requirement_work" : "Yêu cầu công việc",
+        "benefit" : "Quyền lợi",
+        "amount" : "Số lượng tuyển:",
+        "minimum_years_of_experience" : "Kinh nghiệm:",
+        "salary": "Mức lương:",
+        "working_time" : "Thời gian làm việc:",
+        "created_at" : "Ngày đăng tuyển:",
+        "limitation" : "Hạn nộp hồ sơ:",
+        "submit": "Nộp hồ sơ"
+    },
+    "form": {
+        "information_fialog": "Thông tin ứng tuyển:",
+        "name_label": "Họ và tên",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "introduction_label": "Lời giới thiệu:",
+        "attached_files": "File đính kèm",
+        "max": "Tối đa",
+        "formats": "Các định dạng file:",
+        "error_upload": "Vui lòng không tải quá 5 file và dung lượng dưới 100MB",
+        "error_upload_files": "Vui lòng không tải quá 5 files", 
+        "error_upload_total": "Vui lòng không tải quá dung lượng dưới 100MB",
+        "success_career": "Nộp hồ sơ thành công!",
+        "success_des": "Chúc mừng bạn đã nộp hồ sơ ứng tuyển thành công. Hội đồng tuyển dụng  sẽ bắt đầu xét duyệt hồ sơ của bạn. Nếu hồ sơ hợp lệ và đáp ứng đầy đủ các yêu cầu của vị trí ứng tuyển, chúng tôi sẽ liên hệ lại từ 5-7 ngày làm việc bằng email & điện thoại. Mong sớm gặp bạn tại PionTech!",
+        "close_dialog": "Đóng thông báo",
+        "name_error": "Vui lòng điền đẩy đủ họ và tên!",
+        "max_name_error": "Tên phải có ít nhất 3 ký tự!",
+        "email_error": "Vui lòng điền đẩy đủ email!",
+        "check_email_error": "Chưa nhập đúng định dạng email!",
+        "phone_error": "Vui lòng điền đẩy đủ điện thoại!",
+        "check_phone_error": "Chưa nhập đúng định dạng số điện thoại!"
+    },
+    "error": {
+        "Please_enter_the_correct_email_format": "Vui lòng nhập đúng định dạng email",
+        "Please_enter_the_correct_phone_number_format": "Vui lòng nhập đúng định dạng số điện thoại",
+        "The_name_must_contain_at_least_3_characters": "Tên phải chứa ít nhất 3 kí tự"
+    }
+}
