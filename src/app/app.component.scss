@@ -7,3 +7,9 @@
 .box-our-partners {
   background: linear-gradient(90deg, #72bf44 0%, #00786b 100%);
 }
+
+h1 span.active {
+  background: linear-gradient(90deg, #72bf44 0%, #00786b 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
