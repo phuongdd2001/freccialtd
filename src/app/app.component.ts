@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { TitleComponentComponent } from './core/components/title-component/title-component.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -19,7 +19,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   private translate = inject(TranslateService);
-  private route_active = inject(ActivatedRoute);
 
   socials: { icon: string; link: string }[] = [
     { icon: 'assets/images/ic_facebbook.svg', link: '' },
@@ -35,14 +34,11 @@ export class AppComponent {
   ];
 
   ngOnInit(): void {
-    this.route_active.url.subscribe((url) => {
-      const lang = url[0]?.path;
-      this.setLanguage(lang);
-    });
+    this.setLanguage();
   }
 
-  setLanguage(lang: string) {
-    if (lang && lang === 'vi') {
+  setLanguage() {
+    if (window.location.pathname === '/vi') {
       this.translate.setDefaultLang('vi');
     } else {
       this.translate.setDefaultLang('en');
