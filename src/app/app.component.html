@@ -1,25 +1,29 @@
-<header>
-  <div class="px-6 py-5 flex justify-between items-center">
-    <a [routerLink]="['']" [rel]="'dofollow'">
-      <img
-        src="assets/images/logo.png"
-        alt="Freccialtd logo"
-        title="Freccialtd logo"
-        width=""
-        height=""
-        class="max-lg:h-[38px]"
-      />
-    </a>
-    <div class="flex items-center gap-x-2">
-      <img
-        src="assets/images/phone.svg"
-        alt=""
-        title=""
-        width="28px"
-        height="28px"
-        class="p-1"
-      />
-      <p class="text-[14px] leading-[22px] font-semibold">Liên hệ 0792582126</p>
+<header id="header">
+  <div class="fixed top-0 w-full z-[999]">
+    <div class="px-6 py-5 flex justify-between items-center">
+      <a [routerLink]="['']" [rel]="'dofollow'">
+        <img
+          src="assets/images/logo.png"
+          alt="Freccialtd logo"
+          title="Freccialtd logo"
+          width=""
+          height=""
+          class="max-lg:h-[38px]"
+        />
+      </a>
+      <div class="flex items-center gap-x-2">
+        <img
+          src="assets/images/phone.svg"
+          alt=""
+          title=""
+          width="28px"
+          height="28px"
+          class="p-1"
+        />
+        <p class="text-[14px] leading-[22px] font-semibold">
+          Liên hệ 0792582126
+        </p>
+      </div>
     </div>
   </div>
 </header>
@@ -37,7 +41,7 @@
         <h1 class="text-[64px] leading-[78px]">
           <span class="active font-bold">FRECCIA </span><span>MOBILE</span>
         </h1>
-        <div class="flex items-center gap-x-[10px]">
+        <div class="flex items-center gap-x-[10px] text-[32px] leading-10 mt-2">
           <p>Like it do it</p>
           <img
             src="assets/images/ic_logo_thumbnail.svg"
@@ -49,6 +53,35 @@
           <p>for a better life</p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="py-[107px] px-[200px] mx-auto">
+    <div class="p-10">
+      <app-title-component
+        [title]="'title_misson' | translate"
+      ></app-title-component>
+      <p class="text-center mt-4">
+        {{ "des_misson_one" | translate }} <br />
+        {{ "des_misson_two" | translate }}
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-[120px] mt-[60px]">
+      @for (item of missions; track $index) {
+      <div
+        class="item-mission p-[38px] rounded-2xl flex flex-col justify-center gap-y-3 text-center"
+      >
+        <img
+          [src]="item.image"
+          alt=""
+          title=""
+          width="72"
+          height="72"
+          class="mx-auto"
+        />
+        <p class="text-[20px] leading-[30px] font-bold">{{ item.title }}</p>
+        <div [innerHtml]="item.des"></div>
+      </div>
+      }
     </div>
   </div>
   <div class="container-main my-[142px]">

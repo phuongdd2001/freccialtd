@@ -13,3 +13,25 @@ h1 span.active {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+.item-mission {
+  border: 2px solid;
+
+  border-image-source: linear-gradient(
+    137.04deg,
+    rgba(255, 255, 255, 0.1) 24.11%,
+    rgba(0, 148, 68, 0.1) 98.32%
+  );
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(153, 153, 153, 0.1) 100%
+    ),
+    linear-gradient(
+      120.73deg,
+      rgba(0, 0, 0, 0) 70.06%,
+      rgba(114, 191, 68, 0.16) 91.2%,
+      rgba(114, 191, 68, 0.2) 98.63%
+    );
+  backdrop-filter: blur(11.100000381469727px);
+}

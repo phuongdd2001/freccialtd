@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { TitleComponentComponent } from './core/components/title-component/title-component.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { IMisson, MissionEn, MissionVi } from './core/data/common.data';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +34,8 @@ export class AppComponent {
     'assets/images/ic_partner_4.png',
   ];
 
+  missions: IMisson[] = [];
+
   ngOnInit(): void {
     this.setLanguage();
   }
@@ -40,8 +43,10 @@ export class AppComponent {
   setLanguage() {
     if (window.location.pathname === '/vi') {
       this.translate.setDefaultLang('vi');
+      this.missions = MissionVi;
     } else {
       this.translate.setDefaultLang('en');
+      this.missions = MissionEn;
     }
   }
 }
