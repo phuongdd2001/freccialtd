@@ -11,7 +11,7 @@ export const MissionVi: IMisson[] = [
     des: '<p>Nâng tầm chất lượng cuộc sống <br> bằng những ứng dụng thông minh, đơn giản, hiệu quả</p>',
   },
   {
-    image: 'assets/images/mission.svg',
+    image: 'assets/images/vision.svg',
     title: 'Tầm nhìn',
     des: '<p>Trở thành tập đoàn công nghệ hàng đầu Việt Nam và vươn mình ra thế giới. <br> Phát triển mạnh mẽ không chỉ trong lĩnh vực ứng dụng mà còn tham gia vào nhiều lĩnh vực khác như giải trí, kinh doanh</p>',
   },
@@ -24,8 +24,8 @@ export const MissionEn: IMisson[] = [
     des: '<p>Elevating the quality of life through smart, simple, and effective solutions.',
   },
   {
-    image: 'assets/images/mission.svg',
-    title: '',
+    image: 'assets/images/vision.svg',
+    title: 'Vision',
     des: "<p>To become Vietnam's leading technology corporation and expand globally. <br> We aim for strong growth not only in the field of applications but also in diverse sectors such as entertainment and business.</p>",
   },
 ];

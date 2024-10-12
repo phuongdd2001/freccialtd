@@ -1,6 +1,17 @@
 {
+  "contact": "Liên hệ",
   "title_misson": "Sứ mệnh & Tầm nhìn",
   "title_partner": "ĐỐI TÁC CỦA CHÚNG TÔI",
+  "title_direction": "ĐỊNH HƯỚNG PHÁT TRIỂN",
   "des_misson_one": "Freccia mang trong mình khát vọng vươn tới mục tiêu một cách hiệu quả và quyết đoán.",
-  "des_misson_two": "Chúng tôi luôn mong muốn đem đến những công nghệ mới nhất, những trải nghiệm tuyệt vời nhất cho người dùng."
+  "des_misson_two": "Chúng tôi luôn mong muốn đem đến những công nghệ mới nhất, những trải nghiệm tuyệt vời nhất cho người dùng.",
+  "name_direction_one": "Vươn cao",
+  "content_direction_one": "Như cây cao chứa rất nhiều tán lá, chúng tôi phát triển mạnh mẽ không chỉ trong lĩnh vực ứng dụng android, mà còn thử sức với các lĩnh vực khác như game, ứng dụng ios. Đa dạng sản phẩm, đa dạng ngành nghề, mang tới cho người dùng những sản phẩm chất lượng, tiện ích, dễ sử dụng với độ sáng tạo cao. Ngoài ra còn mở ra cơ hội việc làm cho hàng trăm hàng ngàn con người",
+  "name_direction_two": "Đón nắng",
+  "content_direction_two": "Đẩy mạnh sản xuất, đa dạng sản phẩm, mở rộng từ số lượng sản phẩm, chất lượng sản phẩm cho tới số lượng nhân sự và chất lượng nhân sự",
+  "name_direction_there": "Bám rễ",
+  "content_direction_there": "Bắt đầu thành lập công ty, hoạt động với những nhân sự đầu tiên, sản xuất ứng dụng với quy trình làm việc cụ thể, chuyên nghiệp. Sản phẩm đưa ra thị trường được lên kế hoạch rõ ràng, kiểm thử chặt chẽ, đảm bảo mang tới những sản phẩm chất lượng tốt nhất",
+  "name_direction_four": "Ươm mầm",
+  "content_direction_four": "Sản xuất các ứng dụng đơn giản nhưng cần thiết trong cuộc  sống hàng ngày, tạo nền móng cho việc phát triển sau này",
+  "company": "CÔNG TY TNHH FRECCIA MOBILE VIỆT NAM"
 }

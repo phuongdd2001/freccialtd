@@ -12,6 +12,8 @@ module.exports = {
       center: "center",
       "bottom-left": "bottom left",
       "left-top": "left top",
+      "top-center": "top center",
+      "bottom-center": "bottom center",
     },
     extend: {
       colors: {

@@ -1,7 +1,8 @@
 .container-main {
   margin-right: auto;
   margin-left: auto;
-  padding: 0 200px;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
 .box-our-partners {
@@ -34,4 +35,79 @@ h1 span.active {
       rgba(114, 191, 68, 0.2) 98.63%
     );
   backdrop-filter: blur(11.100000381469727px);
+}
+
+.bg-direction {
+  background: radial-gradient(
+    49.87% 49.88% at 53.31% 38.19%,
+    #fafafa 0%,
+    rgba(227, 251, 222, 0.81) 6%,
+    rgba(204, 252, 195, 0.62) 13%,
+    rgba(184, 253, 171, 0.45) 20%,
+    rgba(167, 253, 150, 0.31) 28%,
+    rgba(154, 254, 134, 0.2) 36%,
+    rgba(143, 254, 121, 0.11) 45%,
+    rgba(136, 255, 112, 0.05) 54%,
+    rgba(131, 255, 107, 0.01) 65%,
+    rgba(130, 255, 105, 0) 80%
+  );
+  background-blend-mode: color-dodge;
+}
+
+.box-direction {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(153, 153, 153, 0.1) 100%
+    ),
+    linear-gradient(
+      120.73deg,
+      rgba(0, 0, 0, 0) 70.06%,
+      rgba(114, 191, 68, 0.16) 91.2%,
+      rgba(114, 191, 68, 0.2) 98.63%
+    );
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    137.04deg,
+    rgba(255, 255, 255, 0.1) 24.11%,
+    rgba(0, 148, 68, 0.1) 98.32%
+  );
+  border-radius: 16px;
+
+  padding: 24px;
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    margin-top: 16px;
+  }
+}
+
+@media not all and (min-width: 1280px) {
+  .container-main {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+@media not all and (min-width: 1024px) {
+  .container-main {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .container-main {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .banner-home {
+    object-position: 100%;
+    height: 620px;
+    object-fit: cover;
+  }
 }
