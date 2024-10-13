@@ -1,7 +1,7 @@
 <header id="header" class="max-md:h-20">
-  <div class="fixed top-0 w-full z-[999]">
+  <div class="fixed top-0 w-full z-[999] bg-black">
     <div class="px-6 py-5 flex justify-between items-center">
-      <a [routerLink]="['']" [rel]="'dofollow'">
+      <a [routerLink]="['']" [rel]="'dofollow'" @logoEnter>
         <img
           src="assets/images/logo.png"
           alt="Freccialtd logo"
@@ -78,9 +78,11 @@
     <div
       class="grid grid-cols-2 gap-x-[120px] mt-[60px] max-lg:mt-10 max-lg:gap-x-[60px] max-md:grid-cols-1 max-md:gap-y-6 max-md:mt-6"
     >
-      @for (item of missions; track $index) {
+      @for (item of missions; track $index; ) {
       <div
         class="item-mission p-[38px] rounded-2xl flex flex-col gap-y-3 text-center"
+        [attr.data-aos]="item.type"
+        data-aos-delay="500"
       >
         <img
           [src]="item.image"
@@ -101,66 +103,110 @@
     </div>
   </div>
   <div
-    class="container-main max-w-[1350px] pt-[156px] pb-6 bg-[url('assets/images/banner_2.png')] bg-contain bg-no-repeat bg-top-center max-lg:pt-28 max-md:hidden"
+    class="mx-auto px-[150px] max-w-[1535px] pt-[23px] pb-6 max-2xl:max-w-[1350px] max-2xl:px-[200px] max-md:hidden"
   >
     <div class="flex">
-      <div class="w-[531px] relative">
-        <div class="relative pr-6">
+      <div class="w-[690px] relative max-2xl:w-[531px]">
+        <div class="relative pr-[31px] max-2xl:pr-6" data-aos="fade-right">
           <div class="box-direction">
             <h3>{{ "name_direction_one" | translate }}</h3>
-            <p>
-              {{ "content_direction_one" | translate }}
-            </p>
+            <div
+              class="des-direction"
+              [innerHTML]="addTagBr('content_direction_one' | translate)"
+            ></div>
           </div>
-          <div class="absolute -translate-y-[12px] right-0">
+          <div
+            class="absolute -translate-y-[16px] right-0 max-2xl:-translate-y-[12px]"
+          >
+            @if (widthWindow > 1536) {
+            <img src="assets/images/line_1_desktop.svg" alt="" />
+            } @else {
             <img src="assets/images/line_1.svg" alt="" />
+            }
           </div>
         </div>
-        <div class="relative pr-6 mt-[150px] pl-[89px]">
+        <div
+          class="relative pr-[31px] mt-[167px] pl-[115px] max-2xl:pr-6 max-2xl:mt-[133px] max-2xl:pl-[89px]"
+          data-aos="fade-up-right"
+        >
           <div class="box-direction">
             <h3>{{ "name_direction_there" | translate }}</h3>
-            <p>
-              {{ "content_direction_there" | translate }}
-            </p>
+            <div
+              class="des-direction"
+              [innerHTML]="addTagBr('content_direction_there' | translate)"
+            ></div>
           </div>
-          <div class="absolute -translate-y-[12px] right-0 translate-x-[89px]">
+          <div
+            class="absolute -translate-y-[16px] right-0 translate-x-[117px] max-2xl:-translate-y-[12px] max-2xl:translate-x-[89px]"
+          >
+            @if (widthWindow > 1536) {
+            <img src="assets/images/line_3_desktop.svg" alt="" />
+            } @else {
             <img src="assets/images/line_3.svg" alt="" />
+            }
           </div>
         </div>
       </div>
       <div class="w-auto flex-1">
-        <div class="mt-10">
+        <div class="mt-20 max-2xl:mt-10" data-aos="zoom-in">
+          @if (widthWindow > 1536) {
+          <h2
+            class="font-bold text-[62px] leading-[78px] uppercase text-[#72BF44] text-center max-lg:text-[40px] max-lg:leading-[52px] max-md:text-[32px] max-md:leading-10"
+          >
+            {{ "title_direction" | translate }}
+          </h2>
+          } @else {
           <app-title-component
             [title]="'title_direction' | translate"
           ></app-title-component>
+          }
         </div>
 
-        <div class="relative mt-[98px]">
+        <div class="relative mt-[120px] max-2xl:mt-[98px]" data-aos="fade-left">
           <div class="box-direction">
             <h3>{{ "name_direction_two" | translate }}</h3>
-            <p>
-              {{ "content_direction_two" | translate }}
-            </p>
+            <div
+              class="des-direction"
+              [innerHTML]="addTagBr('content_direction_two' | translate)"
+            ></div>
           </div>
-          <div class="absolute left-0 -translate-x-6 -translate-y-[12px]">
+          <div
+            class="absolute left-0 -translate-x-[31px] -translate-y-[16px] max-2xl:-translate-x-6 max-2xl:-translate-y-[12px]"
+          >
+            @if (widthWindow > 1536) {
+            <img src="assets/images/line_2_desktop.svg" alt="" />
+            } @else {
             <img src="assets/images/line_2.svg" alt="" />
+            }
           </div>
         </div>
-        <div class="relative mt-[143px] pl-[89px]">
+        <div
+          class="relative mt-[183px] pl-[117px] max-2xl:mt-[143px] max-2xl:pl-[89px]"
+          data-aos="fade-up-left"
+        >
           <div class="box-direction">
             <h3>{{ "name_direction_four" | translate }}</h3>
-            <p>
-              {{ "content_direction_four" | translate }}
-            </p>
+            <div
+              class="des-direction"
+              [innerHTML]="addTagBr('content_direction_four' | translate)"
+            ></div>
           </div>
-          <div class="absolute left-0 -translate-x-6 -translate-y-[12px]">
+          <div
+            class="absolute left-0 -translate-x-[31px] -translate-y-[16px] max-2xl:-translate-x-6 max-2xl:-translate-y-[12px]"
+          >
+            @if (widthWindow > 1536) {
+            <img src="assets/images/line_4_desktop.svg" alt="" />
+            } @else {
             <img src="assets/images/line_4.svg" alt="" />
+            }
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-direction w-full h-[156px] mt-[112px]"></div>
+    <div
+      class="bg-direction w-full h-[156px] mt-[140px] max-2xl:mt-[112px]"
+    ></div>
   </div>
   <div
     class="hidden px-4 py-6 bg-[url('assets/images/banner_2.png')] bg-cover bg-no-repeat bg-top-center max-md:block"
@@ -203,7 +249,11 @@
     <app-title-component
       [title]="'title_partner' | translate"
     ></app-title-component>
-    <div class="mt-10 max-md:mt-6">
+    <div
+      class="mt-10 max-md:mt-6"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       <div
         class="box-our-partners flex gap-x-10 items-center justify-center py-12 rounded-2xl max-md:grid max-md:grid-cols-2 max-md:gap-10 max-md:py-12 max-md:px-7"
       >

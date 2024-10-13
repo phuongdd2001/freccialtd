@@ -74,15 +74,32 @@ h1 span.active {
   );
   border-radius: 16px;
 
-  padding: 24px;
+  padding: 31px;
   h3 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 31px;
+    line-height: 39px;
     font-weight: bold;
     text-align: center;
   }
-  p {
-    margin-top: 16px;
+  .des-direction {
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@media not all and (min-width: 1536px) {
+  .box-direction {
+    padding: 24px;
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .des-direction {
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 21px;
+    }
   }
 }
 
@@ -109,5 +126,12 @@ h1 span.active {
     object-position: 100%;
     height: 620px;
     object-fit: cover;
+  }
+  .box-direction {
+    .des-direction {
+      margin-top: 16px;
+      font-size: 21px;
+      line-height: 28px;
+    }
   }
 }
