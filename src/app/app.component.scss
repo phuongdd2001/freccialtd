@@ -1,8 +1,8 @@
 .container-main {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: 180px;
+  padding-left: 180px;
 }
 
 .box-our-partners {
@@ -73,8 +73,8 @@ h1 span.active {
     rgba(0, 148, 68, 0.1) 98.32%
   );
   border-radius: 16px;
-
   padding: 31px;
+  backdrop-filter: blur(11.100000381469727px);
   h3 {
     font-size: 31px;
     line-height: 39px;
@@ -133,5 +133,10 @@ h1 span.active {
       font-size: 21px;
       line-height: 28px;
     }
+  }
+  .bg-one {
+    background-image: url("../assets/images/bg_mobile_1.png");
+    background-position: bottom right;
+    background-size: contain;
   }
 }

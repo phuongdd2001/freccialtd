@@ -1,5 +1,8 @@
 <header id="header" class="max-md:h-20">
-  <div class="fixed top-0 w-full z-[999] bg-black">
+  <div
+    [ngClass]="showScroll ? 'header-up' : 'header-down'"
+    class="fixed top-0 w-full z-[999]"
+  >
     <div class="px-6 py-5 flex justify-between items-center">
       <a [routerLink]="['']" [rel]="'dofollow'" @logoEnter>
         <img
@@ -64,7 +67,7 @@
     </div>
   </div>
   <div
-    class="py-[137px] container-main bg-[url('assets/images/banner_1.png')] bg-contain bg-no-repeat bg-bottom-center max-2xl:py-[107px] max-lg:py-[90px] max-md:bg-cover"
+    class="bg-one py-[137px] container-main bg-[url('assets/images/banner_1.png')] bg-contain bg-no-repeat bg-bottom-center max-2xl:py-[107px] max-lg:py-[90px]"
   >
     <div class="p-10 max-lg:p-8 max-md:p-6">
       <app-title-component
@@ -103,7 +106,7 @@
     </div>
   </div>
   <div
-    class="mx-auto px-[150px] max-w-[1535px] pt-[23px] pb-6 max-2xl:max-w-[1350px] max-2xl:px-[200px] max-md:hidden"
+    class="mx-auto px-[150px] max-w-[1535px] pt-[23px] pb-6 bg-[url('assets/images/banner_2.png')] bg-no-repeat bg-top-center max-2xl:max-w-[1350px] max-2xl:px-[180px] max-md:hidden"
   >
     <div class="flex">
       <div class="w-[690px] relative max-2xl:w-[531px]">
@@ -209,40 +212,61 @@
     ></div>
   </div>
   <div
-    class="hidden px-4 py-6 bg-[url('assets/images/banner_2.png')] bg-cover bg-no-repeat bg-top-center max-md:block"
+    class="hidden px-4 py-6 bg-[url('assets/images/bg_mobile_2.png')] bg-no-repeat bg-right-top max-md:block"
   >
-    <div class="flex flex-col gap-y-6">
-      <div>
-        <app-title-component
-          [title]="'title_direction' | translate"
-        ></app-title-component>
+    <div class="relative">
+      <div class="flex flex-col gap-y-6 relative z-[1]">
+        <div>
+          <app-title-component
+            [title]="'title_direction' | translate"
+          ></app-title-component>
+        </div>
+        <div class="box-direction">
+          <h3>{{ "name_direction_one" | translate }}</h3>
+          <p>
+            {{ "content_direction_one" | translate }}
+          </p>
+        </div>
+        <div class="box-direction">
+          <h3>{{ "name_direction_two" | translate }}</h3>
+          <p>
+            {{ "content_direction_two" | translate }}
+          </p>
+        </div>
+        <div class="box-direction">
+          <h3>{{ "name_direction_there" | translate }}</h3>
+          <p>
+            {{ "content_direction_there" | translate }}
+          </p>
+        </div>
+        <div class="box-direction">
+          <h3>{{ "name_direction_four" | translate }}</h3>
+          <p>
+            {{ "content_direction_four" | translate }}
+          </p>
+        </div>
       </div>
-      <div class="box-direction">
-        <h3>{{ "name_direction_one" | translate }}</h3>
-        <p>
-          {{ "content_direction_one" | translate }}
-        </p>
-      </div>
-      <div class="box-direction">
-        <h3>{{ "name_direction_two" | translate }}</h3>
-        <p>
-          {{ "content_direction_two" | translate }}
-        </p>
-      </div>
-      <div class="box-direction">
-        <h3>{{ "name_direction_there" | translate }}</h3>
-        <p>
-          {{ "content_direction_there" | translate }}
-        </p>
-      </div>
-      <div class="box-direction">
-        <h3>{{ "name_direction_four" | translate }}</h3>
-        <p>
-          {{ "content_direction_four" | translate }}
-        </p>
+      <div class="absolute bottom-[-123px] -right-[16px]">
+        <img
+          src="assets/images/line_1_mobile.svg"
+          alt=""
+          class="ml-auto absolute top-[-160px]"
+        />
+        <img
+          src="assets/images/line_3_mobile.svg"
+          alt=""
+          class="ml-auto absolute top-[-73px]"
+        />
+        <img
+          src="assets/images/line_2_mobile.svg"
+          alt=""
+          class="ml-auto absolute top-[-31px]"
+        />
+        <img src="assets/images/line_4_mobile.svg" alt="" class="ml-auto" />
       </div>
     </div>
-    <div class="bg-direction w-full h-[156px] mt-6"></div>
+
+    <div class="bg-direction w-full h-[156px] mt-6 max-md:mt-[63px]"></div>
   </div>
 
   <div class="container-main my-[142px] max-lg:my-20 max-md:my-6">

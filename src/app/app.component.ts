@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { TitleComponentComponent } from './core/components/title-component/title-component.component';
@@ -50,6 +50,16 @@ export class AppComponent {
   widthWindow: number = 0;
 
   missions: IMisson[] = [];
+  showScroll: boolean = false;
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    if (document.documentElement.scrollTop > 0) {
+      this.showScroll = true;
+    } else {
+      this.showScroll = false;
+    }
+  }
 
   ngOnInit(): void {
     this.widthWindow = window.innerWidth;
