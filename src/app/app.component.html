@@ -32,39 +32,37 @@
   </div>
 </header>
 <main>
-  <div>
-    <div class="relative mx-auto max-w-max">
-      <div
-        class="absolute top-1/2 -translate-y-1/2 max-2xl:pl-[200px] max-xl:pl-8 max-md:relative max-md:top-0 max-md:mt-[120px] max-md:translate-x-unset max-md:pl-5"
+  <div class="relative mx-auto max-w-max h-full">
+    <div
+      class="absolute top-1/2 -translate-y-1/2 max-2xl:pl-[200px] max-xl:pl-8 max-md:relative max-md:top-0 max-md:mt-[120px] max-md:translate-x-unset max-md:pl-5"
+    >
+      <h1
+        class="text-[64px] leading-[78px] max-lg:text-[50px] max-lg:leading-[58px] max-md:text-[36px] max-md:leading-[44px]"
       >
-        <h1
-          class="text-[64px] leading-[78px] max-lg:text-[50px] max-lg:leading-[58px] max-md:text-[36px] max-md:leading-[44px]"
-        >
-          <span class="active font-bold">FRECCIA </span><span>MOBILE</span>
-        </h1>
-        <div
-          class="flex items-center gap-x-[10px] text-[32px] leading-10 mt-2 max-lg:leading-8 max-md:text-[16px] max-md:leading-5"
-        >
-          <p>Like it do it</p>
-          <img
-            src="assets/images/ic_logo_thumbnail.svg"
-            alt=""
-            title=""
-            width=""
-            height=""
-          />
-          <p>for a better life</p>
-        </div>
+        <span class="active font-bold">FRECCIA </span><span>MOBILE</span>
+      </h1>
+      <div
+        class="flex items-center gap-x-[10px] text-[32px] leading-10 mt-2 max-lg:leading-8 max-md:text-[16px] max-md:leading-5"
+      >
+        <p>Like it do it</p>
+        <img
+          src="assets/images/ic_logo_thumbnail.svg"
+          alt=""
+          title=""
+          width=""
+          height=""
+        />
+        <p>for a better life</p>
       </div>
-      <img
-        src="assets/images/banner.png"
-        alt="Freccialtd banner"
-        title="Freccialtd banner"
-        width=""
-        height=""
-        class="banner-home"
-      />
     </div>
+    <img
+      src="assets/images/banner.png"
+      alt="Freccialtd banner"
+      title="Freccialtd banner"
+      width="1440"
+      height="1024"
+      class="banner-home"
+    />
   </div>
   <div
     class="bg-one overflow-hidden py-[137px] container-main bg-[url('assets/images/banner_1.png')] bg-contain bg-no-repeat bg-bottom-center max-2xl:py-[107px] max-lg:py-[90px]"
@@ -85,7 +83,6 @@
       <div
         class="item-mission p-[38px] rounded-2xl flex flex-col gap-y-3 text-center"
         [attr.data-aos]="item.type"
-        data-aos-delay="500"
       >
         <img
           [src]="item.image"
@@ -110,7 +107,11 @@
   >
     <div class="flex">
       <div class="w-[690px] relative max-2xl:w-[531px]">
-        <div class="relative pr-[31px] max-2xl:pr-6" data-aos="fade-right">
+        <div
+          class="relative pr-[31px] max-2xl:pr-6"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div class="box-direction">
             <h3>{{ "name_direction_one" | translate }}</h3>
             <div
@@ -131,6 +132,7 @@
         <div
           class="relative pr-[31px] mt-[167px] pl-[115px] max-2xl:pr-6 max-2xl:mt-[133px] max-2xl:pl-[89px]"
           data-aos="fade-up-right"
+          data-aos-delay="500"
         >
           <div class="box-direction">
             <h3>{{ "name_direction_there" | translate }}</h3>
@@ -151,7 +153,11 @@
         </div>
       </div>
       <div class="w-auto flex-1">
-        <div class="mt-20 max-2xl:mt-10" data-aos="zoom-in">
+        <div
+          class="mt-20 max-2xl:mt-10"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
           @if (widthWindow > 1536) {
           <h2
             class="font-bold text-[62px] leading-[78px] uppercase text-[#72BF44] text-center max-lg:text-[40px] max-lg:leading-[52px] max-md:text-[32px] max-md:leading-10"
@@ -165,7 +171,11 @@
           }
         </div>
 
-        <div class="relative mt-[120px] max-2xl:mt-[98px]" data-aos="fade-left">
+        <div
+          class="relative mt-[120px] max-2xl:mt-[98px]"
+          data-aos="fade-left"
+          data-aos-delay="500"
+        >
           <div class="box-direction">
             <h3>{{ "name_direction_two" | translate }}</h3>
             <div
@@ -186,6 +196,7 @@
         <div
           class="relative mt-[183px] pl-[117px] max-2xl:mt-[143px] max-2xl:pl-[89px]"
           data-aos="fade-up-left"
+          data-aos-delay="500"
         >
           <div class="box-direction">
             <h3>{{ "name_direction_four" | translate }}</h3>
@@ -277,6 +288,7 @@
       class="mt-10 max-md:mt-6"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
+      data-aos-delay="500"
     >
       <div
         class="box-our-partners flex gap-x-10 items-center justify-center py-12 rounded-2xl max-md:grid max-md:grid-cols-2 max-md:gap-10 max-md:py-12 max-md:px-7"
