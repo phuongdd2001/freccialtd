@@ -77,7 +77,7 @@
       </p>
     </div>
     <div
-      class="grid grid-cols-2 gap-x-[120px] mt-[60px] max-lg:mt-10 max-lg:gap-x-[60px] max-md:grid-cols-1 max-md:gap-y-6 max-md:mt-6"
+      class="h-full grid grid-cols-2 gap-x-[120px] mt-[60px] max-lg:mt-10 max-lg:gap-x-[60px] max-md:grid-cols-1 max-md:gap-y-6 max-md:mt-6"
     >
       @for (item of missions; track $index; ) {
       <div
@@ -103,9 +103,9 @@
     </div>
   </div>
   <div
-    class="mx-auto px-[150px] max-w-[1535px] pt-[23px] pb-6 bg-[url('assets/images/banner_2.png')] bg-no-repeat bg-top-center max-2xl:max-w-[1350px] max-2xl:px-[180px] max-md:hidden"
+    class="h-full mx-auto px-[150px] max-w-[1535px] pt-[23px] pb-6 bg-[url('assets/images/banner_2.png')] bg-no-repeat bg-top-center max-2xl:max-w-[1350px] max-2xl:px-[180px] max-md:hidden"
   >
-    <div class="flex">
+    <div class="flex h-full">
       <div class="w-[690px] relative max-2xl:w-[531px]">
         <div
           class="relative pr-[31px] max-2xl:pr-6"
@@ -223,10 +223,10 @@
     ></div>
   </div>
   <div
-    class="hidden overflow-hidden px-4 py-6 bg-[url('assets/images/bg_mobile_2.png')] bg-no-repeat bg-right-top max-md:block"
+    class="hidden h-full overflow-hidden px-4 py-6 bg-[url('assets/images/bg_mobile_2.png')] bg-no-repeat bg-right-top max-md:block"
   >
-    <div class="relative">
-      <div class="flex flex-col gap-y-6 relative z-[1]">
+    <div class="relative h-full">
+      <div class="flex flex-col gap-y-6 relative z-[1] h-full">
         <div data-aos="zoom-in" data-aos-delay="300">
           <app-title-component
             [title]="'title_direction' | translate"
@@ -280,12 +280,12 @@
     <div class="bg-direction w-full h-[156px] mt-6 max-md:mt-[63px]"></div>
   </div>
 
-  <div class="container-main my-[142px] max-lg:my-20 max-md:my-6">
+  <div class="h-full container-main my-[142px] max-lg:my-20 max-md:my-6">
     <app-title-component
       [title]="'title_partner' | translate"
     ></app-title-component>
     <div
-      class="mt-10 max-md:mt-6"
+      class="mt-10 max-md:mt-6 h-full"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
       data-aos-delay="500"
